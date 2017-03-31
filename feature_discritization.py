@@ -3,7 +3,7 @@ import pandas as pd
 #from matplotlib import style
 #style.use('ggplot')
 
-original_data = pd.read_csv('MDP_Original_data2.csv')
+original_data = pd.read_csv('data/MDP_Original_data2.csv')
 #print original_data.iloc[:,[8]].head()
 vec = list(original_data.columns)
 
@@ -12,10 +12,11 @@ vec = list(original_data.columns)
 
 temp = original_data.copy()
 for i in range(6,len(temp.columns)):
-	x = pd.cut(temp[vec[i]],10,labels=False)
-	temp[vec[i]] = x
+	if temp[vec[i]].dtype != 'int64':
+		x = pd.cut(temp[vec[i]],10,labels=False)
+		temp[vec[i]] = x
 
-temp.to_csv('discreitized_data.csv')
+temp.to_csv('discreitized_float_data.csv')
 
 dic = {}
 for i in x:

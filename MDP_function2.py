@@ -10,8 +10,8 @@ def generate_MDP_input2(original_data, features):
     students_variables = ['student', 'priorTutorAction', 'reward']
 
     # generate distinct state based on feature
-    original_data['state'] = original_data[features].apply(lambda x: ':'.join(str(v) for v in x), axis=1)
-    # original_data['state'] = original_data[features].apply(tuple, axis=1)
+    #original_data['state'] = original_data[features].apply(lambda x: ':'.join(str(v) for v in x), axis=1)
+    original_data['state'] = original_data[features].apply(tuple, axis=1)
     students_variables = students_variables + ['state']
     data = original_data[students_variables]
 
@@ -77,10 +77,8 @@ def generate_MDP_input2(original_data, features):
             expectR[np.isnan(expectR)] = 0
 
         # each column will sum to 1 for each row, obtain the state transition table
-        # some states only have either PS or WE transition to other state
         for l in np.where(np.sum(A[act], axis=1) == 0)[0]:
-            A[act, l, l] = 1
-            
+            A[act][l][l] = 1
         A[act] = np.divide(A[act].transpose(), np.sum(A[act], axis=1))
         A[act] = A[act].transpose()
 
@@ -99,8 +97,27 @@ def output_policy(distinct_acts, distinct_states, vi):
     for s in range(Ns):
         print(distinct_states[s] + " -> " + distinct_acts[vi.policy[s]] + ", " + str(vi.V[s]))
 
+def checkFeatures(original_data):
+    cols = list(original_data.columns)
+
+    max_ecr = 0.0
+    max_selected_features = []
+    for i in range(7, len(cols)):
+        for j in range(i+1, len(cols)):
+            if (original_data[cols[i]].dtype == 'int64' and original_data[cols[j]].dtype == 'int64'):
+                selected_features = [cols[i], cols[j]]
+                #selected_features = ['Level', 'probDiff']
+                ecr = induce_policy_MDP2(original_data, selected_features)
+                if (ecr > max_ecr):
+                    max_ecr = ecr
+                    max_selected_features = selected_features
+    print max_selected_features
+    return max_ecr
+
+
 def induce_policy_MDP2(original_data, selected_features):
 
+    print(selected_features)
     [start_states, A, expectR, distinct_acts, distinct_states] = generate_MDP_input2(original_data, selected_features)
 
     # apply Value Iteration to run the MDP
@@ -117,16 +134,8 @@ def induce_policy_MDP2(original_data, selected_features):
 
 if __name__ == "__main__":
 
-    original_data = pandas.read_csv('MDP_Original_data2.csv')
-    selected_features = ['Level']
+    original_data = pandas.read_csv('MDP_training_data.csv')
+    #selected_features = ['Level', 'probDiff']
+    selected_features = ['hintCount', 'symbolicRepresentationCount']
     ECR_value = induce_policy_MDP2(original_data, selected_features)
-
-    #Code for best subset selection
-    col_names = list(original_data.columns.values)
-    limit = len(original_data.columns)
-    for i in range(14,limit-2):
-        for j in range(15,limit-1):
-            selected_features = []
-            selected_features.append(col_names[i])
-            selected_features.append(col_names[j])
-            ECR_value = induce_policy_MDP2(original_data, selected_features)
+    #checkFeatures(original_data)

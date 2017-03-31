@@ -101,7 +101,33 @@ def checkFeatures(original_data):
     cols = list(original_data.columns)
 
     max_ecr = 0.0
-    max_selected_features = []
+    k=0
+    while k < 2:
+        max_ecr = 0.0
+        if(k==0):
+            for i in range(7, 10):
+                #if (original_data[cols[i]].dtype == 'int64' and cols[i] != 'cumul_Interaction'):# and len(set(original_data[cols[i]])) <= 10):
+                selected_features = [cols[i]]
+                ecr = induce_policy_MDP2(original_data, selected_features)
+                if (ecr > max_ecr):
+                    max_ecr = ecr
+                    max_selected_features = selected_features
+            print 'best feature 1:', max_selected_features
+        elif k==1:
+            for i in range(7, 10):
+                print cols[i],max_selected_features[0]
+                if ( cols[i] != max_selected_features[0]):# and len(set(original_data[cols[i]])) <= 10):
+                    selected_features = [max_selected_features[0],cols[i]]
+                    ecr = induce_policy_MDP2(original_data, selected_features)
+                    if (ecr > max_ecr):
+                        max_ecr = ecr
+                        max_selected_features = selected_features
+            print 'best feature 2:', max_selected_features
+        k+=1
+
+
+
+    alpha="""max_selected_features = []
     for i in range(7, len(cols)):
         if (original_data[cols[i]].dtype == 'int64' and cols[i] != 'cumul_Interaction'):# and len(set(original_data[cols[i]])) <= 10):
             selected_features = ['cumul_Interaction', cols[i]]
@@ -112,7 +138,7 @@ def checkFeatures(original_data):
                 max_ecr = ecr
                 max_selected_features = selected_features
     print max_selected_features
-    return max_ecr
+    return max_ecr"""
 
 
 def induce_policy_MDP2(original_data, selected_features):
@@ -134,7 +160,7 @@ def induce_policy_MDP2(original_data, selected_features):
 
 if __name__ == "__main__":
 
-    original_data = pandas.read_csv('data/MDP_training_data.csv')
+    original_data = pandas.read_csv('data/discreitized_data.csv')
     #selected_features = ['Level', 'probDiff']
     #selected_features = ['symbolicRepresentationCount']
     #ECR_value = induce_policy_MDP2(original_data, selected_features)

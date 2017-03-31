@@ -1,22 +1,21 @@
 import pandas as pd
-import matplotlib.pyplot as plt
-from matplotlib import style
-style.use('ggplot')
+#import matplotlib.pyplot as plt
+#from matplotlib import style
+#style.use('ggplot')
 
 original_data = pd.read_csv('MDP_Original_data2.csv')
 #print original_data.iloc[:,[8]].head()
-vec = list(original_data)
+vec = list(original_data.columns)
 
-original_data[vec[7]].plot()
-plt.show()
+#original_data[vec[7]].plot()
+#plt.show()
 
-alpha = """temp = original_data.copy()
+temp = original_data.copy()
 for i in range(6,len(temp.columns)):
-	#list(original_data[vec[i]])
 	x = pd.cut(temp[vec[i]],10,labels=False)
 	temp[vec[i]] = x
 
-temp.to_csv('discreitized_dataqcut.csv')
+temp.to_csv('discreitized_data.csv')
 
 dic = {}
 for i in x:
@@ -25,4 +24,4 @@ for i in x:
 	else:
 		dic[i] = dic[i]+1
 
-print dic"""
+print dic

@@ -21,7 +21,7 @@ def discritize_all():
 	temp.to_csv('discreitized_float_data.csv')
 
 def discritize_pca_components():
-	pca_features = pd.read_csv('data/pca_features_tpca_features = pd.read_csv('data/pca_features_top3.csv')op3.csv')
+	pca_features = pd.read_csv('data/pca_features_top3.csv')
 	nbins_list = []
 
 	t = pd.DataFrame()

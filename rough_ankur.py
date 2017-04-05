@@ -50,7 +50,7 @@ plt.show()
 
 
 
-input = pd.read_csv('data/pca_data.csv')
+input = pd.read_csv('data/FAMD_features.csv')
 cols = list(input.columns)
 output = pd.DataFrame()
 for col in cols:

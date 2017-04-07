@@ -121,6 +121,15 @@ temp[[0,1,2,3,4,5]].to_csv('data/pca_data.csv',index=False)
 #          9.95415882e-10,   6.26398816e-10,   1.97026179e-10,
 #          1.24571813e-10])
 
+# Try clustering on PCA's to find out how many bins to make
+from sklearn.cluster import MeanShift
+import numpy as np
+import pandas as pd
+pca_data = pd.read_csv('data/new_pca_data.csv')
+pca_data.head()
+ms = MeanShift(n_jobs=-1)
+ms.fit(np.array(pca_data['0']).reshape(-1,1))
+np.unique(ms.labels_)
 
 
 
@@ -149,3 +158,75 @@ def calculate_vif_(X):
 	return X[variables]
 
 clean_data = calculate_vif_(pd.read_csv('data/continuous_data.csv'))
+
+
+
+
+
+
+
+# *****************************************************
+# Scaling and trying pca
+import pandas as pd
+import numpy as np
+from sklearn.decomposition import PCA
+from sklearn import preprocessing
+
+temp = pd.read_csv('data/uncorrelated_continuous_data.csv')
+vec = list(temp.columns)
+for v in vec:
+	temp[v] = preprocessing.scale(temp[v])
+
+pca = PCA()
+temp_pca = pca.fit_transform(temp)
+temp_pca = pd.DataFrame(temp_pca)
+
+original_pca = pd.read_csv('data/pca_data.csv')
+
+exp_variance = list(pca.explained_variance_ratio_)
+# this method has the result
+#>>> pca.explained_variance_ratio_
+# array([  1.39458344e-01,   8.39514305e-02,   6.02347227e-02,
+#          4.81988162e-02,   4.50864646e-02,   4.25902448e-02,
+#          3.45768707e-02,   2.89915597e-02,   2.78930736e-02,
+#          2.29913987e-02,   2.06589697e-02,   2.00705059e-02,
+#          1.96919986e-02,   1.84801665e-02,   1.73147673e-02,
+#          1.70365470e-02,   1.61552689e-02,   1.53394033e-02,
+#          1.46319386e-02,   1.41629299e-02,   1.39003986e-02,
+#          1.34651075e-02,   1.28739435e-02,   1.21999702e-02,
+#          1.20389418e-02,   1.11338309e-02,   1.07671967e-02,
+#          1.02045663e-02,   9.68397813e-03,   9.43327353e-03,
+#          9.08713157e-03,   8.58203678e-03,   8.42318665e-03,
+#          8.18170110e-03,   8.00373216e-03,   7.69822602e-03,
+#          7.63279563e-03,   7.29912331e-03,   6.89340834e-03,
+#          6.69221610e-03,   6.25081012e-03,   6.11137477e-03,
+#          5.96352336e-03,   5.60343244e-03,   5.53101607e-03,
+#          5.18297758e-03,   5.11380522e-03,   4.91954091e-03,
+#          4.52901679e-03,   4.29227543e-03,   4.04294017e-03,
+#          3.90545881e-03,   3.62389214e-03,   3.42820942e-03,
+#          3.40916989e-03,   3.25337744e-03,   2.90756117e-03,
+#          2.88185421e-03,   2.65656573e-03,   2.63735610e-03,
+#          2.39198649e-03,   1.95843698e-03,   1.70261948e-03,
+#          1.48899166e-03,   1.32654191e-03,   1.19682026e-03,
+#          1.03399514e-03,   5.22008215e-04,   4.23509458e-04,
+#          7.46923519e-07])
+# Almost 60 principle components are required to explain 98% variance which is not helpful
+
+# Will not try normalizing the data
+
+import pandas as pd
+import numpy as np
+from sklearn.decomposition import PCA
+from sklearn import preprocessing
+
+temp = pd.read_csv('data/uncorrelated_continuous_data.csv')
+vec = list(temp.columns)
+preprocessing.normalize(temp,axis=1,copy=False)
+
+pca = PCA()
+temp_pca = pca.fit_transform(temp)
+temp_pca = pd.DataFrame(temp_pca)
+
+original_pca = pd.read_csv('data/pca_data.csv')
+
+exp_variance = list(pca.explained_variance_ratio_)

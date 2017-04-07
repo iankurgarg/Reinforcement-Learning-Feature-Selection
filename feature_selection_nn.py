@@ -2,7 +2,7 @@ import tensorflow as tf
 import pandas as pd
 import numpy as np
 
-original_data = pd.read_csv('MDP_Original_data2.csv')
+original_data = pd.read_csv('data/MDP_Original_data2.csv')
 vec = list(original_data.columns)
 original_data = original_data[vec[6:]]
 length = float(len(original_data))

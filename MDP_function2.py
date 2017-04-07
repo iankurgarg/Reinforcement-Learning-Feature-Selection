@@ -95,7 +95,7 @@ def output_policy(distinct_acts, distinct_states, vi):
     print('Policy: ')
     print('state -> action, value-function')
     for s in range(Ns):
-        print(distinct_states[s] + " -> " + distinct_acts[vi.policy[s]] + ", " + str(vi.V[s]))
+        print(str(distinct_states[s]) + " -> " + str(distinct_acts[vi.policy[s]]) + ", " + str(vi.V[s]))
 
 def checkFeatures(original_data):
     cols = list(original_data.columns)
@@ -103,14 +103,14 @@ def checkFeatures(original_data):
     max_ecr = 0.0
     max_selected_features = []
     for i in range(7, len(cols)):
-        for j in range(i+1, len(cols)):
-            if (original_data[cols[i]].dtype == 'int64' and original_data[cols[j]].dtype == 'int64'):
-                selected_features = [cols[i], cols[j]]
-                #selected_features = ['Level', 'probDiff']
-                ecr = induce_policy_MDP2(original_data, selected_features)
-                if (ecr > max_ecr):
-                    max_ecr = ecr
-                    max_selected_features = selected_features
+        if (original_data[cols[i]].dtype == 'int64' and cols[i] != 'cumul_Interaction'):# and len(set(original_data[cols[i]])) <= 10):
+            selected_features = ['cumul_Interaction', cols[i]]
+            #print selected_features
+            #selected_features = ['Level', 'probDiff']
+            ecr = induce_policy_MDP2(original_data, selected_features)
+            if (ecr > max_ecr):
+                max_ecr = ecr
+                max_selected_features = selected_features
     print max_selected_features
     return max_ecr
 
@@ -134,8 +134,8 @@ def induce_policy_MDP2(original_data, selected_features):
 
 if __name__ == "__main__":
 
-    original_data = pandas.read_csv('MDP_training_data.csv')
+    original_data = pandas.read_csv('data/MDP_training_data.csv')
     #selected_features = ['Level', 'probDiff']
-    selected_features = ['hintCount', 'symbolicRepresentationCount']
-    ECR_value = induce_policy_MDP2(original_data, selected_features)
-    #checkFeatures(original_data)
+    #selected_features = ['symbolicRepresentationCount']
+    #ECR_value = induce_policy_MDP2(original_data, selected_features)
+    print checkFeatures(original_data)

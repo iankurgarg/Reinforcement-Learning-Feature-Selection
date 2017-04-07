@@ -1,0 +1,61 @@
+Ankurs-MacBook-Pro:Project 2 iankurgarg$ python feature_discritization.py 
+['0']
+/Users/iankurgarg/anaconda/lib/python2.7/site-packages/pandas/core/indexing.py:465: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.obj[item] = s
+ECR value: 0.0
+['0']
+ECR value: 0.0
+['0']
+ECR value: 0.0
+['0']
+ECR value: 0.00645724678672
+Max ECR for col: 0 is 0.00645724678672 for 8 bins
+['1']
+ECR value: 8.8899844461
+['1']
+ECR value: 14.2450390329
+['1']
+ECR value: 14.7378536584
+['1']
+ECR value: 17.934875942
+Max ECR for col: 1 is 17.934875942 for 8 bins
+['2']
+ECR value: 0.0
+['2']
+ECR value: 5.00511440982
+['2']
+ECR value: 4.71578104028
+['2']
+ECR value: 5.01028980257
+Max ECR for col: 2 is 5.01028980257 for 8 bins
+['3']
+ECR value: 0.000566920566458
+['3']
+ECR value: 1.87089000122
+['3']
+ECR value: 7.55389071139
+['3']
+ECR value: 7.28798739686
+Max ECR for col: 3 is 7.55389071139 for 6 bins
+['4']
+ECR value: 0.0
+['4']
+ECR value: 0.0
+['4']
+ECR value: 0.81165374361
+['4']
+ECR value: 0.906202820364
+Max ECR for col: 4 is 0.906202820364 for 8 bins
+['5']
+ECR value: 0.0
+['5']
+ECR value: 0.0
+['5']
+ECR value: 5.75067717212
+['5']
+ECR value: 0.0
+Max ECR for col: 5 is 5.75067717212 for 6 bins

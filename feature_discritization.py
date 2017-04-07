@@ -32,12 +32,17 @@ def discretizePCABasedOnECR():
 
 	input_data = pd.concat([input_data, two_features], axis=1)
 
-	features = ['Level', 'cumul_Interaction']
+	features = ['Level', 'cumul_Interaction', '5']
+
+	# Best ECR for PCA feature 5 with 10 bins. Adding it to the list and then checking feature 0 and 2
+	x = pd.cut(pca_data['5'], 10, labels=False)
+	input_data = pd.concat([input_data, x], axis=1)
 
 	cols = list(pca_data.columns)
 
 	perfect_bins = {}
 
+	cols = ['1', '3','4']
 	for col in cols:
 		bins_list = []
 		ecr_list = []
@@ -54,11 +59,11 @@ def discretizePCABasedOnECR():
 				max_ecr = ecr
 				max_i = i
 		plt.plot(bins_list, ecr_list)
-		plt.savefig('images/pca_bins/col'+str(col)+'.png')
+		plt.savefig('images/pca5+[0,2]/col'+str(col)+'.png')
 		print 'Max ECR for col: ' + str(col) + ' is ' + str(max_ecr) + ' for ' + str(max_i) + ' bins'
 		perfect_bins[col] = max_i
 
-
+	print perfect_bins
 
 
 def discritize_pca_components():

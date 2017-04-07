@@ -1,0 +1,123 @@
+['Level', 'cumul_Interaction', 'Dim.5']
+/Users/iankurgarg/anaconda/lib/python2.7/site-packages/pandas/core/indexing.py:465: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self.obj[item] = s
+ECR value: 66.5962811913
+['Level', 'cumul_Interaction', 'Dim.5']
+ECR value: 66.1097626599
+['Level', 'cumul_Interaction', 'Dim.5']
+ECR value: 64.0439109385
+['Level', 'cumul_Interaction', 'Dim.5']
+ECR value: 69.397534187
+['Level', 'cumul_Interaction', 'Dim.5']
+ECR value: 64.5584077386
+['Level', 'cumul_Interaction', 'Dim.5']
+ECR value: 64.2709833559
+['Level', 'cumul_Interaction', 'Dim.5']
+ECR value: 60.2054860332
+['Level', 'cumul_Interaction', 'Dim.5']
+ECR value: 56.2361045816
+['Level', 'cumul_Interaction', 'Dim.5']
+ECR value: 57.8566462801
+['Level', 'cumul_Interaction', 'Dim.5']
+ECR value: 56.3233585041
+['Level', 'cumul_Interaction', 'Dim.5']
+ECR value: 55.4823408671
+['Level', 'cumul_Interaction', 'Dim.5']
+ECR value: 54.1325695331
+['Level', 'cumul_Interaction', 'Dim.5']
+ECR value: 51.4767877269
+['Level', 'cumul_Interaction', 'Dim.5']
+ECR value: 48.8157686154
+Max ECR for col: Dim.5 is 69.397534187 for 8 bins
+['Level', 'cumul_Interaction', 'Dim.6']
+ECR value: 86.2996137888
+['Level', 'cumul_Interaction', 'Dim.6']
+ECR value: 85.7709925023
+['Level', 'cumul_Interaction', 'Dim.6']
+ECR value: 82.5038660657
+['Level', 'cumul_Interaction', 'Dim.6']
+ECR value: 77.562492895
+['Level', 'cumul_Interaction', 'Dim.6']
+ECR value: 71.4820591063
+['Level', 'cumul_Interaction', 'Dim.6']
+ECR value: 66.9179406457
+['Level', 'cumul_Interaction', 'Dim.6']
+ECR value: 63.6096544255
+['Level', 'cumul_Interaction', 'Dim.6']
+ECR value: 62.6306654862
+['Level', 'cumul_Interaction', 'Dim.6']
+ECR value: 64.2597870474
+['Level', 'cumul_Interaction', 'Dim.6']
+ECR value: 63.4191171759
+['Level', 'cumul_Interaction', 'Dim.6']
+ECR value: 59.0016410164
+['Level', 'cumul_Interaction', 'Dim.6']
+ECR value: 59.7321086498
+['Level', 'cumul_Interaction', 'Dim.6']
+ECR value: 58.8632222747
+['Level', 'cumul_Interaction', 'Dim.6']
+ECR value: 55.9345058852
+Max ECR for col: Dim.6 is 86.2996137888 for 2 bins
+['Level', 'cumul_Interaction', 'Dim.7']
+ECR value: 74.1762741222
+['Level', 'cumul_Interaction', 'Dim.7']
+ECR value: 73.7486049599
+['Level', 'cumul_Interaction', 'Dim.7']
+ECR value: 72.0824668902
+['Level', 'cumul_Interaction', 'Dim.7']
+ECR value: 70.2415753895
+['Level', 'cumul_Interaction', 'Dim.7']
+ECR value: 73.7237634471
+['Level', 'cumul_Interaction', 'Dim.7']
+ECR value: 65.3470611754
+['Level', 'cumul_Interaction', 'Dim.7']
+ECR value: 56.9174735194
+['Level', 'cumul_Interaction', 'Dim.7']
+ECR value: 55.7250759883
+['Level', 'cumul_Interaction', 'Dim.7']
+ECR value: 53.1941263945
+['Level', 'cumul_Interaction', 'Dim.7']
+ECR value: 48.6829838525
+['Level', 'cumul_Interaction', 'Dim.7']
+ECR value: 49.4393739793
+['Level', 'cumul_Interaction', 'Dim.7']
+ECR value: 50.7444565267
+['Level', 'cumul_Interaction', 'Dim.7']
+ECR value: 48.7905469502
+['Level', 'cumul_Interaction', 'Dim.7']
+ECR value: 50.3798048175
+Max ECR for col: Dim.7 is 74.1762741222 for 2 bins
+['Level', 'cumul_Interaction', 'Dim.8']
+ECR value: 72.5755465627
+['Level', 'cumul_Interaction', 'Dim.8']
+ECR value: 72.5627565498
+['Level', 'cumul_Interaction', 'Dim.8']
+ECR value: 72.1363988519
+['Level', 'cumul_Interaction', 'Dim.8']
+ECR value: 71.8523267769
+['Level', 'cumul_Interaction', 'Dim.8']
+ECR value: 72.1447970531
+['Level', 'cumul_Interaction', 'Dim.8']
+ECR value: 71.6140484636
+['Level', 'cumul_Interaction', 'Dim.8']
+ECR value: 69.4743934632
+['Level', 'cumul_Interaction', 'Dim.8']
+ECR value: 69.4920840997
+['Level', 'cumul_Interaction', 'Dim.8']
+ECR value: 65.9155893979
+['Level', 'cumul_Interaction', 'Dim.8']
+ECR value: 66.4273306834
+['Level', 'cumul_Interaction', 'Dim.8']
+ECR value: 66.6934099439
+['Level', 'cumul_Interaction', 'Dim.8']
+ECR value: 60.9765588356
+['Level', 'cumul_Interaction', 'Dim.8']
+ECR value: 59.7394501906
+['Level', 'cumul_Interaction', 'Dim.8']
+ECR value: 57.8799403575
+Max ECR for col: Dim.8 is 72.5755465627 for 2 bins
+{'Dim.5': 8, 'Dim.7': 2, 'Dim.6': 2, 'Dim.8': 2}

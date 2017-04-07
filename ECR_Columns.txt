@@ -1,0 +1,7 @@
+Till Now Best:
+
+Level+Cumul_Interaction = 75
+
+Level + Cumul_Interaction + PCA5 (10 Bins) = 81.21
+
+Level + Cumul_Interaction + MFA.Dim6 (2 bins) = 86.29

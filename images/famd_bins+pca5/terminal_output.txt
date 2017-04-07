@@ -1,0 +1,232 @@
+ECR value: 81.2171060291
+['Level', 'cumul_Interaction', '5', 'Dim.1']
+ECR value: 81.0176605049
+['Level', 'cumul_Interaction', '5', 'Dim.1']
+ECR value: 79.4010209087
+['Level', 'cumul_Interaction', '5', 'Dim.1']
+ECR value: 77.7195568959
+['Level', 'cumul_Interaction', '5', 'Dim.1']
+ECR value: 74.184979231
+['Level', 'cumul_Interaction', '5', 'Dim.1']
+ECR value: 77.7574106098
+['Level', 'cumul_Interaction', '5', 'Dim.1']
+ECR value: 76.955406336
+['Level', 'cumul_Interaction', '5', 'Dim.1']
+ECR value: 76.2836927937
+['Level', 'cumul_Interaction', '5', 'Dim.1']
+ECR value: 73.3973526189
+['Level', 'cumul_Interaction', '5', 'Dim.1']
+ECR value: 75.7214421305
+['Level', 'cumul_Interaction', '5', 'Dim.1']
+ECR value: 72.4439322028
+['Level', 'cumul_Interaction', '5', 'Dim.1']
+ECR value: 69.4836670623
+['Level', 'cumul_Interaction', '5', 'Dim.1']
+ECR value: 69.4156435498
+['Level', 'cumul_Interaction', '5', 'Dim.1']
+ECR value: 70.4180486144
+Max ECR for col: Dim.1 is 81.2171060291 for 2 bins
+['Level', 'cumul_Interaction', '5', 'Dim.2']
+ECR value: 80.9853075159
+['Level', 'cumul_Interaction', '5', 'Dim.2']
+ECR value: 78.4142080422
+['Level', 'cumul_Interaction', '5', 'Dim.2']
+ECR value: 73.6322922657
+['Level', 'cumul_Interaction', '5', 'Dim.2']
+ECR value: 71.6321067534
+['Level', 'cumul_Interaction', '5', 'Dim.2']
+ECR value: 74.4891474441
+['Level', 'cumul_Interaction', '5', 'Dim.2']
+ECR value: 71.70168163
+['Level', 'cumul_Interaction', '5', 'Dim.2']
+ECR value: 67.9948288052
+['Level', 'cumul_Interaction', '5', 'Dim.2']
+ECR value: 59.2660084756
+['Level', 'cumul_Interaction', '5', 'Dim.2']
+ECR value: 66.5447276615
+['Level', 'cumul_Interaction', '5', 'Dim.2']
+ECR value: 61.1520900569
+['Level', 'cumul_Interaction', '5', 'Dim.2']
+ECR value: 56.9857681608
+['Level', 'cumul_Interaction', '5', 'Dim.2']
+ECR value: 64.7823812901
+['Level', 'cumul_Interaction', '5', 'Dim.2']
+ECR value: 59.7075748376
+['Level', 'cumul_Interaction', '5', 'Dim.2']
+ECR value: 53.2391629124
+Max ECR for col: Dim.2 is 80.9853075159 for 2 bins
+['Level', 'cumul_Interaction', '5', 'Dim.3']
+ECR value: 76.3529303022
+['Level', 'cumul_Interaction', '5', 'Dim.3']
+ECR value: 77.9775121891
+['Level', 'cumul_Interaction', '5', 'Dim.3']
+ECR value: 69.2541404646
+['Level', 'cumul_Interaction', '5', 'Dim.3']
+ECR value: 67.4140300216
+['Level', 'cumul_Interaction', '5', 'Dim.3']
+ECR value: 55.8617250675
+['Level', 'cumul_Interaction', '5', 'Dim.3']
+ECR value: 53.7235278559
+['Level', 'cumul_Interaction', '5', 'Dim.3']
+ECR value: 52.066952306
+['Level', 'cumul_Interaction', '5', 'Dim.3']
+ECR value: 50.8868134419
+['Level', 'cumul_Interaction', '5', 'Dim.3']
+ECR value: 48.8757713487
+['Level', 'cumul_Interaction', '5', 'Dim.3']
+ECR value: 46.5927569017
+['Level', 'cumul_Interaction', '5', 'Dim.3']
+ECR value: 41.9339729203
+['Level', 'cumul_Interaction', '5', 'Dim.3']
+ECR value: 42.6323073662
+['Level', 'cumul_Interaction', '5', 'Dim.3']
+ECR value: 42.7439682214
+['Level', 'cumul_Interaction', '5', 'Dim.3']
+ECR value: 42.5802981636
+Max ECR for col: Dim.3 is 77.9775121891 for 4 bins
+['Level', 'cumul_Interaction', '5', 'Dim.4']
+ECR value: 81.2171060291
+['Level', 'cumul_Interaction', '5', 'Dim.4']
+ECR value: 75.2816191558
+['Level', 'cumul_Interaction', '5', 'Dim.4']
+ECR value: 74.9541550799
+['Level', 'cumul_Interaction', '5', 'Dim.4']
+ECR value: 69.3076774387
+['Level', 'cumul_Interaction', '5', 'Dim.4']
+ECR value: 74.0764385374
+['Level', 'cumul_Interaction', '5', 'Dim.4']
+ECR value: 74.5421958715
+['Level', 'cumul_Interaction', '5', 'Dim.4']
+ECR value: 68.5680697077
+['Level', 'cumul_Interaction', '5', 'Dim.4']
+ECR value: 60.7965784433
+['Level', 'cumul_Interaction', '5', 'Dim.4']
+ECR value: 65.2435946255
+['Level', 'cumul_Interaction', '5', 'Dim.4']
+ECR value: 66.2586107033
+['Level', 'cumul_Interaction', '5', 'Dim.4']
+ECR value: 67.9800989235
+['Level', 'cumul_Interaction', '5', 'Dim.4']
+ECR value: 58.599425079
+['Level', 'cumul_Interaction', '5', 'Dim.4']
+ECR value: 60.8274687347
+['Level', 'cumul_Interaction', '5', 'Dim.4']
+ECR value: 59.919278207
+Max ECR for col: Dim.4 is 81.2171060291 for 2 bins
+['Level', 'cumul_Interaction', '5', 'Dim.5']
+ECR value: 66.1807279086
+['Level', 'cumul_Interaction', '5', 'Dim.5']
+ECR value: 65.052014192
+['Level', 'cumul_Interaction', '5', 'Dim.5']
+ECR value: 65.1222407133
+['Level', 'cumul_Interaction', '5', 'Dim.5']
+ECR value: 65.428415092
+['Level', 'cumul_Interaction', '5', 'Dim.5']
+ECR value: 64.3504424858
+['Level', 'cumul_Interaction', '5', 'Dim.5']
+ECR value: 61.5932365547
+['Level', 'cumul_Interaction', '5', 'Dim.5']
+ECR value: 58.8083194385
+['Level', 'cumul_Interaction', '5', 'Dim.5']
+ECR value: 52.9898781567
+['Level', 'cumul_Interaction', '5', 'Dim.5']
+ECR value: 53.8082462155
+['Level', 'cumul_Interaction', '5', 'Dim.5']
+ECR value: 54.0933840721
+['Level', 'cumul_Interaction', '5', 'Dim.5']
+ECR value: 52.8675522373
+['Level', 'cumul_Interaction', '5', 'Dim.5']
+ECR value: 52.477953624
+['Level', 'cumul_Interaction', '5', 'Dim.5']
+ECR value: 50.4574996089
+['Level', 'cumul_Interaction', '5', 'Dim.5']
+ECR value: 47.9043585641
+Max ECR for col: Dim.5 is 66.1807279086 for 2 bins
+['Level', 'cumul_Interaction', '5', 'Dim.6']
+ECR value: 82.2565416742
+['Level', 'cumul_Interaction', '5', 'Dim.6']
+ECR value: 81.81594554
+['Level', 'cumul_Interaction', '5', 'Dim.6']
+ECR value: 77.5251762767
+['Level', 'cumul_Interaction', '5', 'Dim.6']
+ECR value: 72.99318783
+['Level', 'cumul_Interaction', '5', 'Dim.6']
+ECR value: 67.8733111002
+['Level', 'cumul_Interaction', '5', 'Dim.6']
+ECR value: 63.6796368452
+['Level', 'cumul_Interaction', '5', 'Dim.6']
+ECR value: 59.9150799286
+['Level', 'cumul_Interaction', '5', 'Dim.6']
+ECR value: 57.9559458609
+['Level', 'cumul_Interaction', '5', 'Dim.6']
+ECR value: 60.6722526222
+['Level', 'cumul_Interaction', '5', 'Dim.6']
+ECR value: 59.6737842136
+['Level', 'cumul_Interaction', '5', 'Dim.6']
+ECR value: 55.4591881765
+['Level', 'cumul_Interaction', '5', 'Dim.6']
+ECR value: 54.1994636128
+['Level', 'cumul_Interaction', '5', 'Dim.6']
+ECR value: 54.390442674
+['Level', 'cumul_Interaction', '5', 'Dim.6']
+ECR value: 52.9574248549
+Max ECR for col: Dim.6 is 82.2565416742 for 2 bins
+['Level', 'cumul_Interaction', '5', 'Dim.7']
+ECR value: 76.2543409615
+['Level', 'cumul_Interaction', '5', 'Dim.7']
+ECR value: 76.4646354825
+['Level', 'cumul_Interaction', '5', 'Dim.7']
+ECR value: 76.0248459878
+['Level', 'cumul_Interaction', '5', 'Dim.7']
+ECR value: 72.6732382107
+['Level', 'cumul_Interaction', '5', 'Dim.7']
+ECR value: 69.840880316
+['Level', 'cumul_Interaction', '5', 'Dim.7']
+ECR value: 61.544810138
+['Level', 'cumul_Interaction', '5', 'Dim.7']
+ECR value: 53.8645939251
+['Level', 'cumul_Interaction', '5', 'Dim.7']
+ECR value: 53.507076626
+['Level', 'cumul_Interaction', '5', 'Dim.7']
+ECR value: 52.6110406748
+['Level', 'cumul_Interaction', '5', 'Dim.7']
+ECR value: 47.6710254409
+['Level', 'cumul_Interaction', '5', 'Dim.7']
+ECR value: 48.2934152567
+['Level', 'cumul_Interaction', '5', 'Dim.7']
+ECR value: 49.4471972179
+['Level', 'cumul_Interaction', '5', 'Dim.7']
+ECR value: 46.8385762149
+['Level', 'cumul_Interaction', '5', 'Dim.7']
+ECR value: 46.3425805997
+Max ECR for col: Dim.7 is 76.4646354825 for 4 bins
+['Level', 'cumul_Interaction', '5', 'Dim.8']
+ECR value: 66.3280950926
+['Level', 'cumul_Interaction', '5', 'Dim.8']
+ECR value: 66.3280950926
+['Level', 'cumul_Interaction', '5', 'Dim.8']
+ECR value: 65.797666377
+['Level', 'cumul_Interaction', '5', 'Dim.8']
+ECR value: 65.4385157846
+['Level', 'cumul_Interaction', '5', 'Dim.8']
+ECR value: 66.1662986965
+['Level', 'cumul_Interaction', '5', 'Dim.8']
+ECR value: 64.2927841427
+['Level', 'cumul_Interaction', '5', 'Dim.8']
+ECR value: 61.8516681963
+['Level', 'cumul_Interaction', '5', 'Dim.8']
+ECR value: 63.0434160022
+['Level', 'cumul_Interaction', '5', 'Dim.8']
+ECR value: 60.4334071988
+['Level', 'cumul_Interaction', '5', 'Dim.8']
+ECR value: 60.8872726998
+['Level', 'cumul_Interaction', '5', 'Dim.8']
+ECR value: 60.6712250762
+['Level', 'cumul_Interaction', '5', 'Dim.8']
+ECR value: 58.1508675047
+['Level', 'cumul_Interaction', '5', 'Dim.8']
+ECR value: 57.2973905195
+['Level', 'cumul_Interaction', '5', 'Dim.8']
+ECR value: 55.6591863818
+Max ECR for col: Dim.8 is 66.3280950926 for 2 bins
+{'Dim.8': 2, 'Dim.5': 2, 'Dim.4': 2, 'Dim.7': 4, 'Dim.6': 2, 'Dim.1': 2, 'Dim.3': 4, 'Dim.2': 2}

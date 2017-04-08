@@ -230,3 +230,14 @@ temp_pca = pd.DataFrame(temp_pca)
 original_pca = pd.read_csv('data/pca_data.csv')
 
 exp_variance = list(pca.explained_variance_ratio_)
+
+
+# ********************************************************************
+# Scaling the 124 features for using in neural network
+import pandas as pd
+from sklearn import preprocessing
+temp = pd.read_csv('data/MDP_Original_data2.csv')
+vec = temp.columns
+temp = temp[vec[6:]]
+temp = preprocessing.scale(temp)
+temp.head()

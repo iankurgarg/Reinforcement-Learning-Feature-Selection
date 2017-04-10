@@ -24,7 +24,7 @@ def neural_network_model(x):
 	l2 = tf.add( tf.matmul(l1, hidden_layer2['weights']), hidden_layer2['biases'])
 	l2_activated = tf.nn.sigmoid(l2)
 	output = tf.matmul(l2_activated, output_layer['weights']) + output_layer['biases']
-	return output
+	return [output,l2]
 
 prediction = neural_network_model(x)
 cost = tf.reduce_sum(tf.abs(prediction[0]-data_x))
@@ -35,12 +35,15 @@ session.run(tf.global_variables_initializer())
 
 # change the number of epochs here and train on the cluster. The file will automatically save the output to a csv file.
 # open the output file and the scaled_124_features file and manually compare the two.
-for i in range(10000):
+for i in range(3000):
 	opt,c,p = session.run([optimizer,cost,prediction], feed_dict={x:data_x})
 	print c
 
-p = session.run([prediction], feed_dict={x:data_x})
-q = np.array(p)
-q = q.reshape(7168,124)
-df = pd.DataFrame(q)
-df.to_csv('data/nn_output10000_80_relu_124.csv',index=False)
+p = session.run(prediction, feed_dict={x:data_x})
+l20 = p[1]
+df_l2 = pd.DataFrame(l20)
+df_l2.to_csv('data/nn_layer2_output.csv',index=False)
+# q = np.array(p)
+# q = q.reshape(7168,124)
+# df = pd.DataFrame(q)
+# df.to_csv('data/nn_output10000_80_relu_124.csv',index=False)

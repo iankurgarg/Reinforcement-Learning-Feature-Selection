@@ -43,6 +43,10 @@ p = session.run(prediction, feed_dict={x:data_x})
 l20 = p[1]
 df_l2 = pd.DataFrame(l20)
 df_l2.to_csv('data/nn_layer2_output.csv',index=False)
+
+flo = p[0]
+df_flo = pd.DataFrame(flo)
+df_flo.to_csv('data/nn_final_layer_output.csv',index=False)
 # q = np.array(p)
 # q = q.reshape(7168,124)
 # df = pd.DataFrame(q)

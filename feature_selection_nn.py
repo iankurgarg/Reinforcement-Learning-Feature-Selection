@@ -12,7 +12,7 @@ print data_x.shape
 x = tf.placeholder('float',[None,124])
 y = tf.placeholder('float',[None,124])
 
-n_nodes_hl1 = 80
+n_nodes_hl1 = 10
 n_nodes_hl2 = 8
 n_nodes_output = 124
 def neural_network_model(x):
@@ -35,7 +35,8 @@ session.run(tf.global_variables_initializer())
 
 # change the number of epochs here and train on the cluster. The file will automatically save the output to a csv file.
 # open the output file and the scaled_124_features file and manually compare the two.
-for i in range(3000):
+num_epochs = input('enter number of epochs:')
+for i in range(int(num_epochs)):
 	opt,c,p = session.run([optimizer,cost,prediction], feed_dict={x:data_x})
 	print c
 

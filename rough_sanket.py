@@ -241,3 +241,27 @@ vec = temp.columns
 temp = temp[vec[6:]]
 temp = preprocessing.scale(temp)
 temp.head()
+
+
+# ********************************************************************
+# Comparing results from both neural network training
+import pandas as pd
+import numpy as np
+import tensorflow as tf
+original = pd.read_csv('data/scaled124_generated.csv')
+output_1 = pd.read_csv('data/nn_final_layer_output.csv')
+output_2 = pd.read_csv('data/nn_scrap/nn_final_layer_output.csv')
+
+original = np.array(original)
+output_1 = np.array(output_1)
+output_2 = np.array(output_2)
+
+error1 = tf.reduce_sum(tf.abs(original - output_1))
+error2 = tf.reduce_sum(tf.abs(original - output_2))
+session = tf.Session()
+session.run(tf.global_variables_initializer())
+e1 = session.run(error1)
+e2 = session.run(error2)
+
+print 'error 1:',e1
+print 'error 2:',e1

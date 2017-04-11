@@ -94,6 +94,7 @@ def output_policy(distinct_acts, distinct_states, vi):
     Ns = len(distinct_states)
     print('Policy: ')
     print('state -> action, value-function')
+    print Ns
     for s in range(Ns):
         print(str(distinct_states[s]) + " -> " + str(distinct_acts[vi.policy[s]]) + ", " + str(vi.V[s]))
 
@@ -134,8 +135,14 @@ def induce_policy_MDP2(original_data, selected_features):
 
 if __name__ == "__main__":
 
-    original_data = pandas.read_csv('data/MDP_training_data.csv')
-    #selected_features = ['Level', 'probDiff']
+    original_data = pandas.read_csv('data/MDP_Original_data2.csv')
+    famd_data = pandas.read_csv('data/famd/FAMD_features.csv')
+    x = pandas.cut(famd_data['Dim.6'], 2, labels=False)
+    two_features = original_data[['Level', 'cumul_Interaction']]
+
+    nn_data = pandas.read_csv('data/nn/nn_scrap/nn_discreitized_data.csv')
+    selected_features = ['Level', 'cumul_Interaction', 'Dim.6']
+    total_data = pandas.concat([original_data.iloc[:,0:6], two_features, x], axis=1)
     #selected_features = ['symbolicRepresentationCount']
-    #ECR_value = induce_policy_MDP2(original_data, selected_features)
-    print checkFeatures(original_data)
+    ECR_value = induce_policy_MDP2(total_data, selected_features)
+    #print checkFeatures(original_data)

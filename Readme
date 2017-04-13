@@ -1,8 +1,7 @@
 Report
 
 Abstract
-
-The abstract paragraph should be indented 1/2 inch (3 picas) on both the left- and right-hand margins. Use 10 point type, with a vertical spacing (leading) of 11 points. The word Abstract must be centered, bold, and in point size 12. Two line spaces precede the abstract. The abstract must be limited to one paragraph.
+The methods used for feature selection were Principal Component Analysis, Mixed Factor Analysis. Feature Subset Selection for selecting the best subset for MDP Process. Discretization was done using various binning techniques like Clustering, equal width binning etc. Greedy discretization for finding the optimal number of bins for discretization. Neural networks for feature compression.
 
 1.	Plan of Action
 
